@@ -30,6 +30,10 @@ a {
   color:rgba(255,255,255,.5);
 }
 
+.table-hover tbody tr:hover{
+  background-color:rgb(0,0,0,0.5)
+}
+
 
 @media screen and (max-width:576px){
   .mobile_navbar {

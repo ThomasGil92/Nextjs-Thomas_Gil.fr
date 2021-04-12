@@ -3,6 +3,7 @@ import styles from "../../containers/Github/Github.module.css";
 import { useSelector } from "react-redux";
 
 const GithubCard = ({ githubData }) => {
+  console.log(githubData)
   const theme = useSelector((state) => state.theme);
   return (
     <Col xs={12} md={3}>
@@ -11,11 +12,12 @@ const GithubCard = ({ githubData }) => {
         className={theme && theme==="light"?`${styles.scale_on_card} border-0 shadow-lg rounded`:`${styles.scale_on_card} border-warning shadow-lg rounded`}
       >
         <Card.Body>
-          <Image
+          <Col className="text-center mx-auto" xs={6} md={12}><Image
             className={`${styles.githubImage}`}
             roundedCircle
-            src={githubData.avatar_url}
-          />
+            src="/img/thomas-g.jpg"
+          /></Col>
+          
           <div className="text-left mt-2">
             <h3 className="mb-0">{githubData.name}</h3>
             <p>{githubData.login}</p>

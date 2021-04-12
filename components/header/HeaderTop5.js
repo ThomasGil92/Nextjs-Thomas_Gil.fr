@@ -41,7 +41,7 @@ const HeaderTop5 = () => {
 
   const topCard = (topTitle, p1, p2,i) => {
     return (
-      <Col className={`${styles.headerTop5Anim} px-2 mb-4 mb-md-5`} key={i} xs md={4}>
+      <Col className={`${styles.headerTop5Anim} px-2 mb-4 mb-md-5`} key={i} xs={11} md={4}>
         <div className="border rounded p-4 h-100" style={{backgroundColor:"rgb(250,250,250,0.2)"}}>
           <h4>{topTitle}</h4>
           <div className="text-left">

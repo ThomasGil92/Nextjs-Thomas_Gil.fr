@@ -6,8 +6,8 @@ const FunctionTable = () => {
   /* forU mean "for user" and forA mean "for admin" */
   const tableRow = (func, forU, forA, i) => {
     return (
-      <tr className={`${styles.tr} font-italic font-weight-light`} key={i}>
-        <td className={`${styles.td}`}>{func}</td>
+      <tr className={`${styles.tr} font-italic font-weight-light `} key={i}>
+        <td className={`mt-2 d-flex`}><p className="mb-0 align-items-center">{func}</p></td>
         <td>{forU && forU === true ? <CheckLogo /> : ""}</td>
         <td>{forA && forA === true ? <CheckLogo /> : ""}</td>
       </tr>
@@ -84,7 +84,7 @@ const FunctionTable = () => {
         src="/img/1538758.png"
       />
       <Col xs={12} md={6} className="mx-auto">
-        <Table borderless striped hover className="text-white">
+        <Table responsive="sm" borderless striped hover className="text-white">
           <thead>
             <tr>
               <th>

@@ -24,7 +24,6 @@
   padding-top: 70px;
 }
 
-
 .reversed_png {
   transform: scaleX(-1);
   right: 0;
@@ -34,7 +33,13 @@
   line-height: 13px;
 }
 
-.tr:hover{
-    color:white!important;
-    transform:scale(1.1)
+.tr:hover {
+  color: white !important;
+}
+
+@media screen and (min-width: 960px) {
+  .tr:hover {
+    color: white !important;
+    transform: scale(1.1);
+  }
 }
