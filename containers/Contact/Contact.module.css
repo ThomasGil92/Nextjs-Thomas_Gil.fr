@@ -1,0 +1,17 @@
+.contact_form_background{
+    background-color:#5600C2;
+}
+.contact_form_background_dark{
+    background-image: linear-gradient(
+    to right bottom,
+    #030108,
+    #10051d,
+    #150a2d,
+    #190b3e,
+    #20094f
+  );
+}
+.rounded_circle{
+    border-radius: 20px ;
+    width:30%;
+}

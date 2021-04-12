@@ -1,0 +1,40 @@
+.last_project_radius {
+  border-top-left-radius: 170px 70px;
+  border-top-right-radius: 170px 70px;
+  border-bottom-left-radius: 170px 70px;
+  border-bottom-right-radius: 170px 70px;
+  background-color: #5600c2;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+.last_project_radius_dark {
+  border-top-left-radius: 170px 70px;
+  border-top-right-radius: 170px 70px;
+  border-bottom-left-radius: 170px 70px;
+  border-bottom-right-radius: 170px 70px;
+  background-image: linear-gradient(
+    to right bottom,
+    #030108,
+    #10051d,
+    #150a2d,
+    #190b3e,
+    #20094f
+  );
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+
+.reversed_png {
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.th {
+  line-height: 13px;
+}
+
+.tr:hover{
+    color:white!important;
+    transform:scale(1.1)
+}

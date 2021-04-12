@@ -1,0 +1,62 @@
+html,
+body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif!important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.progress-bar{
+  background-color:#ff0000;
+}
+.bg-progress-bar-dark{
+  background-color:#a30000;
+}
+
+.bg-realy-dark{
+  background-color:#0E1117
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+  color:rgba(255,255,255,.5);
+}
+
+
+@media screen and (max-width:576px){
+  .mobile_navbar {
+    height:100vh;
+  padding-top: 25px;
+  text-align: left;
+  background-image: linear-gradient(
+    to right bottom,
+    #5400be,
+    #5000b6,
+    #4c00ad,
+    #4900a5,
+    #45009d
+  );
+}
+
+.mobile_navbar_dark {
+  padding-top: 25px;
+  height:100vh;
+  text-align: left;
+  background-image: linear-gradient(
+    to right bottom,
+    #030108,
+    #10051d,
+    #150a2d,
+    #190b3e,
+    #20094f
+  );
+}
+}
