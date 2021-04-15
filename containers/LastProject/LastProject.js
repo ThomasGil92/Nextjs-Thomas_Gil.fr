@@ -18,9 +18,9 @@ const LastProject = () => {
       <h1 className="font-weight-light text-white text-center">
         Dernier projet
       </h1>
-      <Row className="mx-0 mt-5 pt-5 justify-content-center align-items-center">
+      <Row className="mx-0 mt-md-5 pt-5 justify-content-center align-items-center">
         <Col md={5} className="mx-auto">
-          <h2 style={{ fontSize: "40px" }} className="font-weight-bolder">
+          <h2 style={{ fontSize: "40px" }} className="font-weight-bolder text-center text-md-left mb-3">
             Solution Ecommerce
           </h2>
           <p>
@@ -30,7 +30,7 @@ const LastProject = () => {
             autres fonctionnalités disponibles.
           </p>
         </Col>
-        <Col md={5} className="mx-auto">
+        <Col md={5} className="mx-auto mt-3 mt-md-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="80"

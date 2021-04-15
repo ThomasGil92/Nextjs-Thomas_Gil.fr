@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { setTheme } from "../../redux/actions";
+import { Nav } from "react-bootstrap";
 
 export const ThemeButton = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,12 @@ export const ThemeButton = () => {
   });
 
   const flipSwitch = () => {
+    /* if (window.innerWidth <= 900) {
+      let navbarElt = document.getElementById("test");
+      console.log(navbarElt)
+      navbarElt.collapse({toggle:true})
+    } */
+
     if (!localStorage.getItem("theme")) {
       if (theme === "light") {
         dispatch(setTheme("dark"));
@@ -51,8 +58,8 @@ export const ThemeButton = () => {
   }, []);
 
   return (
-    <li
-    onClick={flipSwitch}
+    <div
+      onClick={flipSwitch}
       title="modifier le thème"
       className="ml-md-auto nav-item mr-2 mt-3 mt-md-0 d-flex align-items-center"
       style={{ cursor: "pointer" }}
@@ -82,7 +89,7 @@ export const ThemeButton = () => {
               height: "23px",
               width: "23px",
               borderRadius: "100%",
-              marginBottom:"2px",
+              marginBottom: "2px",
               backgroundColor: theme === "dark" ? "#00488e" : "#343a40",
             }}
             variants={{
@@ -97,7 +104,7 @@ export const ThemeButton = () => {
         </motion.div>
       </div>
       <div className="ml-3">{theme === "dark" ? "Dark" : "Light"}</div>
-    </li>
+    </div>
   );
 };
 

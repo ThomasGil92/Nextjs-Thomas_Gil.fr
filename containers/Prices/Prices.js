@@ -40,7 +40,7 @@ const Prices = () => {
       <Row
         className="mx-0 justify-content-around text-center mt-5" /* style={{marginTop:"150px"}} */
       >
-        <Col md={3}>
+        <Col xs={10} md={3}>
           <Image
             src="/img/4977548.png"
             className="mb-3"
@@ -64,7 +64,7 @@ const Prices = () => {
             </p>
           </div>
         </Col>
-        <Col md={3}>
+        <Col xs={10} md={3}>
           <Image
             src="/img/3774167.png"
             className="mb-3"
@@ -91,7 +91,7 @@ const Prices = () => {
             </p>
           </div>
         </Col>
-        <Col md={3}>
+        <Col xs={10} md={3}>
           <Image
             src="/img/3955358.png"
             className="mb-3"
