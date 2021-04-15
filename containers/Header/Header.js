@@ -1,11 +1,19 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./Header.module.css";
 import { useSelector } from "react-redux";
-import React from "react";
-import HeaderTop5 from '../../components/header/HeaderTop5'
+import React, { useState } from "react";
+import HeaderTop5 from "../../components/header/HeaderTop5";
+import ReactTextTransition, { presets } from "react-text-transition";
+
+const texts = ["React.js", "Node.js", "Next.js","front-end","back-end","fullstack"];
 
 const Header = () => {
+  const [textIndex, setTextIndex] = useState(0);
   const theme = useSelector((state) => state.theme);
+
+  setInterval(() => {
+    setTextIndex(textIndex + 1);
+  }, 2000);
 
   return (
     <Container
@@ -22,7 +30,12 @@ const Header = () => {
           <h1 className="d-none d-md-block display-1 mb-0">Thomas Gil</h1>
           <h1 className=" d-md-none text-uppercase mb-0">Thomas Gil</h1>
           <hr className="bg-white d-md-none" />
-          <h2>Développeur web React / Node.js</h2>
+          <h2>Développeur web <ReactTextTransition
+              text={texts[textIndex % texts.length]}
+              springConfig={presets.wobbly}
+              style={{ margin: "0 4px" }}
+              inline
+            /></h2>
         </Col>
         <Col>
           <Image
@@ -49,7 +62,7 @@ const Header = () => {
           </p>
           <p className="text-left"></p>
         </Col>
-        <HeaderTop5/>
+        <HeaderTop5 />
       </Row>
     </Container>
   );
