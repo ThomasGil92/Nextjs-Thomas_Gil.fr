@@ -15,6 +15,7 @@ a {
   box-sizing: border-box;
 }
 
+
 .progress-bar{
   background-color:#ff0000;
 }
@@ -35,6 +36,11 @@ a {
 }
 
 
+@media screen and (min-width:576px){
+.no-border-on-md{
+  border: none!important;
+}
+}
 @media screen and (max-width:576px){
   .mobile_navbar {
     height:100vh;

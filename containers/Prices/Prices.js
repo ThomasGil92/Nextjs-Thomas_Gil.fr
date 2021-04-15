@@ -7,10 +7,10 @@ const Prices = () => {
 
   return (
     <Row id="prices" className={theme && theme==="light"?"mx-0 d-block my-md-5":`${styles.prices_bg_dark} mx-0 d-block my-md-5`}>
-      <h1 className="font-weight-light text-center">Tarifs / Prestations</h1>
+      <h1 className="font-weight-light text-center mt-5 mt-md-0">Tarifs / Prestations</h1>
       <br />
       <Row className="mx-0 mt-md-5 text-center">
-        <Col md={6}>
+        <Col xs={11} md={6} className="no-border-on-md mx-auto my-3 mb-2 my-md-0 py-3 border border-2">
           <h2 className="font-weight-light">Tarif jour moyen</h2>
           <p
             className="font-weight-bold"
@@ -18,11 +18,11 @@ const Prices = () => {
           >
             310&euro;*
           </p>
-          <p className="font-weight-light">
+          <p className="font-weight-light mb-0">
             *En fonction de la longueur des missions
           </p>
         </Col>
-        <Col md={6}>
+        <Col xs={11} md={6} className="no-border-on-md mx-auto my-3 my-md-0 py-3 border border-2">
           {" "}
           <h2 className="font-weight-light">Tarif site de base</h2>
           <p
@@ -31,7 +31,7 @@ const Prices = () => {
           >
             1500&euro;*
           </p>
-          <p className="font-weight-light">
+          <p className="font-weight-light mb-0">
             *Site vitrine (1 page + 1 formulaire de contact + infos)
           </p>
         </Col>
