@@ -8,8 +8,8 @@ const OrderSlides = () => {
         <Carousel
           indicators={false}
           fade
-          className="w-100"
-          style={{ height: "291px", overflow: "hidden" }}
+          className="w-100 mt-4 mt-md-0"
+          style={{overflow: "hidden" }}
         >
           <Carousel.Item>
             <img
@@ -32,7 +32,7 @@ const OrderSlides = () => {
 
             <Carousel.Caption>
               <h3
-                className="mx-auto text-dark rounded mb-3 p-2"
+                className="text-dark rounded p-2"
                 style={{
                   backgroundColor: "rgb(250,250,250,0.5)",
                 }}
@@ -42,10 +42,10 @@ const OrderSlides = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100 h-auto" src="/img/ecomm7.png" />
+            <img className="d-block w-100" src="/img/ecomm7.png" />
             <Carousel.Caption>
               <h3
-                className="mx-auto rounded mb-5 p-2"
+                className="rounded p-2"
                 style={{ backgroundColor: "rgb(0,0,0,0.5)" }}
               >
                 Paiement sécurisé
