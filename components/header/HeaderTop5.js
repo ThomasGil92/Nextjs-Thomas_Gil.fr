@@ -41,9 +41,9 @@ const HeaderTop5 = () => {
 
   const topCard = (topTitle, p1, p2,i) => {
     return (
-      <Col className={`${styles.headerTop5Anim} px-2 mb-4 mb-md-5`} key={i} xs={11} md={4}>
+      <Col className={`${styles.headerTop5Anim} px-3 mb-4 mb-md-5`} key={i} xs={11} md={5}>
         <div className="border rounded p-4 h-100" style={{backgroundColor:"rgb(250,250,250,0.2)"}}>
-          <h4>{topTitle}</h4>
+          <h4 className="font-weight-bold font-italic">{topTitle}</h4>
           <div className="text-left">
             <p>{p1}</p>
             <p>{p2}</p>
@@ -102,7 +102,7 @@ const HeaderTop5 = () => {
           <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
         </svg>
       </Col>
-      <Row className="mx-0 justify-content-around my-5 my-md-4 px-md-5">
+      <Row className="mx-0 justify-content-center my-5 my-md-4 px-md-5">
         {cardContent.map((cardItem, i) => {
           return topCard(cardItem.topTitle, cardItem.p1, cardItem.p2,i);
         })}

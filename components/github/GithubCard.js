@@ -3,7 +3,6 @@ import styles from "../../containers/Github/Github.module.css";
 import { useSelector } from "react-redux";
 
 const GithubCard = ({ githubData }) => {
-  console.log(githubData)
   const theme = useSelector((state) => state.theme);
   return (
     <Col xs={12} md={3}>
