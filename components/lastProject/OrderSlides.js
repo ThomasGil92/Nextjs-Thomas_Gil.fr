@@ -8,7 +8,7 @@ const OrderSlides = () => {
         <Carousel
           indicators={false}
           fade
-          className="w-100 mt-4 mt-md-0"
+          className="w-100 mt-5 mt-md-0"
           style={{overflow: "hidden" }}
         >
           <Carousel.Item>

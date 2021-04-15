@@ -52,6 +52,9 @@ a {
   .carousel img {
     height: 200px;
   }
+  .carousel h3{
+    font-size: 1rem;
+  }
   .mobile_navbar {
     height: 100vh;
     padding-top: 25px;
