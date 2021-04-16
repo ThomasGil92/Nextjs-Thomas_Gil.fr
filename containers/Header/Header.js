@@ -3,17 +3,10 @@ import styles from "./Header.module.css";
 import { useSelector } from "react-redux";
 import React, { useState } from "react";
 import HeaderTop5 from "../../components/header/HeaderTop5";
-import ReactTextTransition, { presets } from "react-text-transition";
-
-const texts = ["React.js", "Node.js", "Next.js","front-end","back-end","fullstack"];
+import Typed from "react-typed";
 
 const Header = () => {
-  const [textIndex, setTextIndex] = useState(0);
   const theme = useSelector((state) => state.theme);
-
-  setInterval(() => {
-    setTextIndex(textIndex + 1);
-  }, 2000);
 
   return (
     <Container
@@ -30,12 +23,21 @@ const Header = () => {
           <h1 className="d-none d-md-block display-1 mb-0">Thomas Gil</h1>
           <h1 className=" d-md-none text-uppercase mb-0">Thomas Gil</h1>
           <hr className="bg-white d-md-none" />
-          <h2>Développeur web <ReactTextTransition
-              text={texts[textIndex % texts.length]}
-              springConfig={presets.wobbly}
-              style={{ margin: "0 4px" }}
-              inline
-            /></h2>
+          <h2>
+            <Typed
+              strings={[
+                "Développeur web React",
+                "Développeur web Next.js",
+                "Développeur web Node.js",
+                "Développeur web front-end",
+                "Développeur web back-end",
+                "Développeur web fullstack",
+              ]}
+              typeSpeed={80}
+              backSpeed={60}
+              loop
+            ></Typed>
+          </h2>
         </Col>
         <Col>
           <Image
