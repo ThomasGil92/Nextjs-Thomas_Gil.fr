@@ -35,6 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [person clipart png from pngtree.com](https://pngtree.com/so/person-clipart)
 [handshake icons png from pngtree.com](https://pngtree.com/so/handshake-icons)
 [go to work png from pngtree.com](https://pngtree.com/so/go-to-work)
+[Fond PSD créé par graphictwister - fr.freepik.com](https://fr.freepik.com/psd/fond)
 
 
 

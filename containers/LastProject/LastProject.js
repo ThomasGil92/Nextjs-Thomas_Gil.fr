@@ -18,7 +18,7 @@ const LastProject = () => {
       <h1 className="font-weight-light text-white text-center">
         Dernier projet
       </h1>
-      <Row className="mx-0 mt-md-5 pt-5 justify-content-center align-items-center">
+      <Row className="mx-0 mt-md-5 pt-5 justify-content-center align-items-center accentued-padding">
         <Col md={5} className="mx-auto">
           <h2 style={{ fontSize: "40px" }} className="font-weight-bolder text-center text-md-left mb-3">
             Solution Ecommerce
@@ -48,8 +48,8 @@ const LastProject = () => {
           <Image width="100%" src="/img/coll1.png" />
         </Col>
       </Row>
-      <FunctionTable />
       <OrderSlides />
+      <FunctionTable />
     </div>
   );
 };

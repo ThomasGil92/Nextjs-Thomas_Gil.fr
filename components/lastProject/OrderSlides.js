@@ -1,58 +1,101 @@
 import { Carousel, Row, Col } from "react-bootstrap";
+//import Swiper from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Pagination, Navigation, A11y } from "swiper";
+import "swiper/swiper-bundle.css";
 
 const OrderSlides = () => {
+  SwiperCore.use([Autoplay, Navigation, Pagination, A11y]);
   return (
     <Row className="mx-0 pt-md-5 mt-5 flex-column text-center">
       <h1>Aperçu en images</h1>
-      <Col md={6} className="mx-auto mt-md-5 ">
-        <Carousel
-          indicators={false}
-          fade
-          className="w-100 mt-5 mt-md-0"
-          style={{overflow: "hidden" }}
+      <Col className="mx-auto my-5 px-0">
+        <div
+          className="d-md-block d-none"
+          style={{
+            backgroundImage: `url("http://localhost:3000/img/desktop-slider.png")`,
+            backgroundSize: "auto 700px",
+            backgroundRepeat: "no-repeat",
+            height: "700px",
+            backgroundPosition: "center",
+          }}
         >
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/img/ecomm4.png"
-              alt="Suivi de commandes"
-            />
-            <Carousel.Caption>
-              <h3
-                className="rounded p-2"
-                style={{ backgroundColor: "rgb(0,0,0,0.5)" }}
+          <Swiper
+            id="swipper"
+            slidesPerView={1}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            navigation
+            loop
+            autoplay={{ delay: 4000 }}
+          >
+            <SwiperSlide>
+              <div
+                id="last-project-slide-1"
+                className="d-flex justify-content-center position-relative"
               >
-                Suivi des commandes
-              </h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <img className="d-block w-100" src="/img/ecomm5.png" alt="Theme" />
-
-            <Carousel.Caption>
-              <h3
-                className="text-dark rounded p-2"
-                style={{
-                  backgroundColor: "rgb(250,250,250,0.5)",
-                }}
+                <div
+                  className="w-100 bg-dark py-md-4 position-absolute"
+                  style={{ bottom: "-84px" }}
+                >
+                  <h2 className="font-italic font-weight-bold text-white mb-0">
+                    Gestion des commandes
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                id="last-project-slide-2"
+                className="d-flex justify-content-center position-relative"
               >
-                Thème personnalisable
-              </h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="/img/ecomm7.png" />
-            <Carousel.Caption>
-              <h3
-                className="rounded p-2"
-                style={{ backgroundColor: "rgb(0,0,0,0.5)" }}
+                <div
+                  className="w-100 bg-dark py-md-4 position-absolute"
+                  style={{ bottom: "-84px" }}
+                >
+                  <h2 className="font-italic font-weight-bold text-white mb-0">
+                    Gestion des stocks
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div
+                id="last-project-slide-3"
+                className="d-flex justify-content-center position-relative"
               >
-                Paiement sécurisé
-              </h3>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+                <div
+                  className="w-100 bg-dark py-md-4 position-absolute"
+                  style={{ bottom: "-84px" }}
+                >
+                  <h2 className="font-italic font-weight-bold text-white mb-0">
+                    Paiements sécurisés
+                  </h2>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="d-md-none">
+          <Swiper
+            slidesPerView={1}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            navigation
+            loop
+            autoplay={{ delay: 4000 }}
+          >
+            <SwiperSlide>
+              <div id="last-project-slide-1"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div id="last-project-slide-2"></div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div id="last-project-slide-3"></div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </Col>
     </Row>
   );

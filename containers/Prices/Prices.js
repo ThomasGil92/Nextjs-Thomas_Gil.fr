@@ -9,7 +9,7 @@ const Prices = () => {
     <Row id="prices" className={theme && theme==="light"?"mx-0 d-block my-md-5":`${styles.prices_bg_dark} mx-0 d-block my-md-5`}>
       <h1 className="font-weight-light text-center mt-5 mt-md-0">Tarifs / Prestations</h1>
       <br />
-      <Row className="mx-0 mt-md-5 text-center">
+      <Row className="mx-0 my-md-5 text-center">
         <Col xs={11} md={6} className="no-border-on-md mx-auto my-3 mb-2 my-md-0 py-3 border border-2">
           <h2 className="font-weight-light">Tarif jour moyen</h2>
           <p
@@ -38,7 +38,7 @@ const Prices = () => {
       </Row>
       <hr />
       <Row
-        className="mx-0 justify-content-around text-center mt-5" /* style={{marginTop:"150px"}} */
+        className="mx-0 justify-content-around text-center mt-5 py-md-5 accentued-padding" /* style={{marginTop:"150px"}} */
       >
         <Col xs={10} md={3}>
           <Image
