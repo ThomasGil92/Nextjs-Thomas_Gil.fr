@@ -49,6 +49,9 @@ a {
   }
 }
 @media screen and (max-width: 576px) {
+  #animated-text{
+    font-size: 1.2rem;
+  }
   .carousel img {
     height: 200px;
   }

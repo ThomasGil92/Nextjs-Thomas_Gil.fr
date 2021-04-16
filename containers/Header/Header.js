@@ -23,7 +23,7 @@ const Header = () => {
           <h1 className="d-none d-md-block display-1 mb-0">Thomas Gil</h1>
           <h1 className=" d-md-none text-uppercase mb-0">Thomas Gil</h1>
           <hr className="bg-white d-md-none" />
-          <h2>
+          <h2 id="animated-text">
             <Typed
               strings={[
                 "Développeur web React",
