@@ -21,7 +21,7 @@ const HeaderTop5 = () => {
       topTitle: "Next.js",
       p1:
         "Next.js est un framework React qui permet le rendu côté serveur (affichage de la page que quand les données ont déja été chargées, performance ++) ainsi que la génération de sites dits statics (performance +++).",
-      p2: "De plus, il est extrêmement facile à mettre en place et à déployer.",
+      p2: "De plus, il est extrêmement facile et rapide à mettre en place et à déployer.",
     },
     {
       topTitle: "React Bootstrap",
