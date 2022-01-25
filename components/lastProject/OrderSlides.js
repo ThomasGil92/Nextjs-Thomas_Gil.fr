@@ -12,7 +12,7 @@ const OrderSlides = () => {
         <div
           className="d-md-block d-none"
           style={{
-            backgroundImage: `url("http://localhost:3000/img/desktop-slider.png")`,
+            backgroundImage: `url("http://thomas-gil.fr/img/desktop-slider.png")`,
             backgroundSize: "auto 700px",
             backgroundRepeat: "no-repeat",
             height: "700px",
