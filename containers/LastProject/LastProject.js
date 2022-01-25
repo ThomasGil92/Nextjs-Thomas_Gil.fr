@@ -1,6 +1,7 @@
 import { Row, Col, Image } from "react-bootstrap";
 import styles from "./LastProject.module.css";
-import FunctionTable from "../../components/lastProject/FunctionTable";
+//import NetflixClone from "../../components/lastProject/NetflixClone";
+//import FunctionTable from "../../components/lastProject/FunctionTable";
 import OrderSlides from "../../components/lastProject/OrderSlides";
 import { useSelector } from "react-redux";
 
@@ -18,9 +19,13 @@ const LastProject = () => {
       <h1 className="font-weight-light text-white text-center">
         Dernier projet
       </h1>
-      <Row className="mx-0 mt-md-5 pt-5 justify-content-center align-items-center accentued-padding">
-        <Col md={5} className="mx-auto">
-          <h2 style={{ fontSize: "40px" }} className="font-weight-bolder text-center text-md-left mb-3">
+      <Row className="mx-0 justify-content-center align-items-center accentued-padding">
+        {/* <NetflixClone /> */}
+        {/* <Col md={5} className="mx-auto">
+          <h2
+            style={{ fontSize: "40px" }}
+            className="font-weight-bolder text-center text-md-left mb-3"
+          >
             Solution Ecommerce
           </h2>
           <p>
@@ -46,10 +51,10 @@ const LastProject = () => {
             />
           </svg>
           <Image width="100%" src="/img/coll1.png" />
-        </Col>
+        </Col> */}
       </Row>
       <OrderSlides />
-      <FunctionTable />
+      {/*<FunctionTable />*/}
     </div>
   );
 };

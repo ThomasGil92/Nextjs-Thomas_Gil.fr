@@ -3,7 +3,6 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../../containers/Contact/Contact.module.css";
 
-
 const ContactForm = () => {
   const [userCredentials, setUserCredentials] = useState({
     email: "",
@@ -27,7 +26,7 @@ const ContactForm = () => {
           `${process.env.REST_API}/api/send-email`,
           {
             user,
-          },
+          }
         );
         console.log(response);
         setUserCredentials({
@@ -35,7 +34,9 @@ const ContactForm = () => {
           message: "Votre message est bien parti",
           email: "",
         });
-      }else{console.log("prout")}
+      } else {
+        console.log("prout");
+      }
     } catch (err) {
       console.log("Une erreur est survenue");
     }
@@ -52,6 +53,7 @@ const ContactForm = () => {
             name="email"
             value={userCredentials.email}
             type="email"
+            required
             placeholder="Votre adresse email"
           />
           <Form.Text className="text-white">
@@ -69,7 +71,12 @@ const ContactForm = () => {
             rows={3}
           />
         </Form.Group>
-        <Button block className={`${styles.rounded_circle} mx-auto my-md-5`} variant="primary" type="submit">
+        <Button
+          block
+          className={`${styles.rounded_circle} mx-auto my-md-5`}
+          variant="primary"
+          type="submit"
+        >
           Envoyer
         </Button>
       </Form>

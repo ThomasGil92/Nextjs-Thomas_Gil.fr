@@ -7,9 +7,8 @@ import "swiper/swiper-bundle.css";
 const OrderSlides = () => {
   SwiperCore.use([Autoplay, Navigation, Pagination, A11y]);
   return (
-    <Row className="mx-0 pt-md-5 mt-5 flex-column text-center">
-      <h1>Aperçu en images</h1>
-      <Col className="mx-auto my-5 px-0">
+    <Row className="mx-0 mt-5 flex-column text-center">
+      <Col className="mx-auto px-0">
         <div
           className="d-md-block d-none"
           style={{
@@ -23,8 +22,8 @@ const OrderSlides = () => {
           <Swiper
             id="swipper"
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            /* onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)} */
             navigation
             loop
             autoplay={{ delay: 4000 }}
@@ -34,14 +33,14 @@ const OrderSlides = () => {
                 id="last-project-slide-1"
                 className="d-flex justify-content-center position-relative"
               >
-                <div
+                {/*  <div
                   className="w-100 bg-dark py-md-4 position-absolute"
                   style={{ bottom: "-84px" }}
                 >
                   <h2 className="font-italic font-weight-bold text-white mb-0">
                     Gestion des commandes
                   </h2>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -49,29 +48,14 @@ const OrderSlides = () => {
                 id="last-project-slide-2"
                 className="d-flex justify-content-center position-relative"
               >
-                <div
+                {/* <div
                   className="w-100 bg-dark py-md-4 position-absolute"
                   style={{ bottom: "-84px" }}
                 >
                   <h2 className="font-italic font-weight-bold text-white mb-0">
                     Gestion des stocks
                   </h2>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div
-                id="last-project-slide-3"
-                className="d-flex justify-content-center position-relative"
-              >
-                <div
-                  className="w-100 bg-dark py-md-4 position-absolute"
-                  style={{ bottom: "-84px" }}
-                >
-                  <h2 className="font-italic font-weight-bold text-white mb-0">
-                    Paiements sécurisés
-                  </h2>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           </Swiper>
@@ -79,8 +63,8 @@ const OrderSlides = () => {
         <div className="d-md-none">
           <Swiper
             slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
+            /* onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)} */
             navigation
             loop
             autoplay={{ delay: 4000 }}
@@ -90,9 +74,6 @@ const OrderSlides = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div id="last-project-slide-2"></div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div id="last-project-slide-3"></div>
             </SwiperSlide>
           </Swiper>
         </div>
